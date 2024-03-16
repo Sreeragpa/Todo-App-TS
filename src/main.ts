@@ -10,10 +10,13 @@ const initApp = (): void =>{
   const itemEntryForm = document.getElementById("itemEntryForm") as HTMLFormElement;
 
   itemEntryForm.addEventListener("submit",(event: SubmitEvent): void=>{
+    console.log("jhfbiefbefueiw");
+    
     event.preventDefault();
 
     const input = document.getElementById("newItem") as HTMLInputElement;
     const newEntryText: string = input.value.trim();
+    input.value =''
 
     if(!newEntryText.length)return 
 
